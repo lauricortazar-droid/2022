@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#042f66">
+  <meta name="description" content="Diplomado en Liderazgo Efectivo I, generación 2022. Videos, cuadernillo digital, avance y preparación de tu entrega con audio.">
+  <title>Diplomado en Liderazgo Efectivo I · 2022 | FGDLL</title>
+  <link rel="icon" href="logo-gdll.png">
+  <link rel="stylesheet" href="app.css">
+  <script defer src="vendor/lucide.js"></script>
+  <script defer src="course.js"></script>
+  <script defer src="model.js"></script>
+  <script defer src="workbook-export.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body data-portal-url="../../portal.html">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#modulos" aria-label="Diplomado 2022, módulos"><img src="logo-gdll.png" alt="Logotipo oficial de Guerreros de la Luz" width="48" height="48"><span><strong>FGDLL</strong><small>Liderazgo Efectivo I · 2022</small></span></a>
+      <a id="portal-link" class="icon-button" href="../../" title="Volver a Formación" aria-label="Volver a Formación"><i data-lucide="arrow-left" aria-hidden="true"></i></a>
+    </div>
+    <div class="shell progress-strip"><div><strong id="global-progress">Tu avance: 0%</strong><span id="save-status" role="status">Cargando respuestas…</span></div><progress id="global-bar" max="100" value="0" aria-label="Avance del diplomado"></progress></div>
+  </header>
+  <main id="main" class="shell">
+    <section class="intro" aria-labelledby="course-title">
+      <span class="eyebrow">Formación FGDLL · Generación 2022</span>
+      <h1 id="course-title">Diplomado en Liderazgo Efectivo I</h1>
+      <p>Bienvenido al espacio digital del Diplomado en Liderazgo Efectivo I — 2022. Aquí podrás consultar nuevamente los videos, trabajar tu cuadernillo digital, guardar tus respuestas y preparar tu entrega.</p>
+      <div class="intro-summary"><span id="summary-count">9 módulos · 13 videos</span><button class="button gold" id="resume"><i data-lucide="arrow-right" aria-hidden="true"></i><span id="resume-label">Comenzar mi cuadernillo</span></button></div>
+    </section>
+    <nav class="view-nav" aria-label="Secciones del diplomado">
+      <a href="#modulos" data-view="modulos" aria-current="page"><i data-lucide="layout-grid" aria-hidden="true"></i>Módulos</a>
+      <a href="#cuadernillo" data-view="cuadernillo"><i data-lucide="notebook-pen" aria-hidden="true"></i>Cuadernillo</a>
+      <a href="#entrega" data-view="entrega"><i data-lucide="send" aria-hidden="true"></i>Entrega</a>
+    </nav>
+    <section id="modulos" class="view" aria-labelledby="modules-title">
+      <div class="section-heading"><div><h2 id="modules-title">Tus módulos</h2><p id="module-summary">Continúa a tu ritmo.</p></div></div>
+      <div id="module-grid" class="module-grid"></div>
+    </section>
+    <section id="cuadernillo" class="view" hidden aria-labelledby="workbook-title">
+      <div class="workbook-toolbar"><label for="module-select">Módulo del cuadernillo</label><select id="module-select"></select><div class="module-pagination"><button id="previous-module" class="icon-button" title="Módulo anterior" aria-label="Módulo anterior"><i data-lucide="chevron-left" aria-hidden="true"></i></button><span id="module-position"></span><button id="next-module" class="icon-button" title="Módulo siguiente" aria-label="Módulo siguiente"><i data-lucide="chevron-right" aria-hidden="true"></i></button></div></div>
+      <div class="workbook-heading"><span class="eyebrow" id="workbook-number"></span><h2 id="workbook-title"></h2><p id="workbook-subtitle"></p><div class="module-progress-line"><strong id="workbook-percent"></strong><span id="workbook-state" class="status"></span></div><progress id="workbook-bar" value="0" max="100" aria-label="Avance del módulo"></progress></div>
+      <section class="videos" id="video-section" aria-labelledby="video-title"><h3 id="video-title">La clase</h3><div id="video-tabs" class="video-tabs"></div><div id="video-player" class="player"></div><p class="video-note">Después de ver este video, continúa con las preguntas de reflexión de tu cuadernillo.</p><div id="video-checks" class="check-list"></div></section>
+      <section aria-labelledby="answers-title" class="answers"><div class="section-heading"><div><h3 id="answers-title">Mi reflexión</h3><p>Escribe con tus propias palabras.</p></div><span id="answer-counter"></span></div><div id="questions"></div><div id="authenticity"></div></section>
+      <div class="workbook-footer"><button class="button outline" id="module-pdf"><i data-lucide="download" aria-hidden="true"></i>PDF de este módulo</button><button class="button gold" id="continue-module">Siguiente módulo<i data-lucide="arrow-right" aria-hidden="true"></i></button></div>
+    </section>
+    <section id="entrega" class="view" hidden aria-labelledby="delivery-title">
+      <div class="section-heading"><div><span class="eyebrow">Cierre del diplomado</span><h2 id="delivery-title">¿Cómo entrego mi cuadernillo?</h2></div></div>
+      <div class="delivery-intro"><p>Para entregar tu cuadernillo del Diplomado en Liderazgo Efectivo I — 2022 no basta únicamente con enviar las respuestas escritas.</p><p>Deberás acompañarlo con <strong>un audio en el que expliques, con tus propias palabras, qué comprendiste de cada módulo del Diplomado.</strong></p><p>No buscamos que leas el cuadernillo ni que memorices conceptos. Queremos escuchar qué entendiste, qué descubriste y cómo lo relacionas con tu propia experiencia de liderazgo y servicio.</p></div>
+      <section class="participant" aria-labelledby="participant-title"><h3 id="participant-title">Datos para mi cuadernillo</h3><div class="profile-grid"><label>Nombre completo<input id="fullName" autocomplete="name" data-profile="fullName" placeholder="Tu nombre completo"></label><label>Grupo o centro <span class="muted">(opcional)</span><input data-profile="group" autocomplete="organization"></label><label>Zona <span class="muted">(opcional)</span><input data-profile="zone"></label></div><details><summary>Otros datos del participante</summary><div class="profile-grid"><label>Correo<input data-profile="email" type="email" autocomplete="email"></label><label>Teléfono<input data-profile="phone" type="tel" autocomplete="tel"></label><label>Nombre para reconocimiento<input data-profile="recognitionName" autocomplete="name"></label></div></details></section>
+      <section class="export-section" aria-labelledby="export-title"><h3 id="export-title">Descargar mi cuadernillo</h3><p>Incluye tu nombre, fecha, módulos, preguntas, respuestas y páginas numeradas.</p><div class="export-actions"><button class="button gold" id="download-pdf"><i data-lucide="file-down" aria-hidden="true"></i>Descargar PDF</button><button class="button outline" id="prepare-png"><i data-lucide="images" aria-hidden="true"></i>Preparar imágenes PNG</button></div><p id="export-status" role="status"></p><a class="button outline" id="pdf-download-link" hidden>Descargar PDF preparado</a><div id="png-results" hidden><div class="png-toolbar"><strong id="png-count"></strong><button class="button outline" id="download-zip"><i data-lucide="download" aria-hidden="true"></i>Descargar todas</button><button class="button outline" id="share-gallery"><i data-lucide="share-2" aria-hidden="true"></i>Guardar en mi galería</button></div><p id="gallery-help"></p><div id="png-pages" class="png-pages"></div></div></section>
+      <article class="audio-card"><h3>¿Cómo debe ser mi audio?</h3><p>Imagina que estás hablando con una ahijada nueva que nunca ha tomado el Diplomado y te pregunta:</p><p><strong>“¿De qué se trató el primer módulo?”</strong></p><p>Tú se lo explicarías con tus propias palabras. Por ejemplo:</p><blockquote>“En el primer módulo vimos una introducción al liderazgo. Yo entendí que liderar no significa solamente dirigir personas, sino empezar por aprender a dirigirme a mí mismo. Hubo algunas cosas que me hicieron revisar cómo estoy ejerciendo mi liderazgo y me di cuenta de…”</blockquote><p>Después continuarías con el siguiente módulo:</p><blockquote>“En comunicación asertiva entendí que… Esto me hizo darme cuenta de… Y creo que puedo aplicarlo en…”</blockquote><p>Así deberás hacerlo con cada uno de los temas.</p><h4>Tu audio debe explicar:</h4><ul><li>De qué trató cada módulo.</li><li>Qué entendiste tú.</li><li>Qué fue lo que más te hizo reflexionar.</li><li>Qué descubriste de ti.</li><li>Cómo puedes aplicar ese aprendizaje.</li><li>Cómo se lo explicarías a una persona nueva con palabras sencillas.</li></ul><p class="audio-principle"><strong>No queremos escuchar cuánto memorizaste. Queremos escuchar cuánto comprendiste.</strong></p></article>
+      <section class="audio-guide" aria-labelledby="guide-title"><h3 id="guide-title">Guía para grabar tu audio</h3><p>Puedes seguir esta estructura para cada módulo:</p><ol><li><strong>¿De qué trató?</strong><span>Explica brevemente el tema.</span></li><li><strong>¿Qué entendí?</strong><span>Cuéntalo con tus propias palabras.</span></li><li><strong>¿Qué descubrí de mí?</strong><span>Explica qué te hizo reflexionar.</span></li><li><strong>¿Cómo lo puedo aplicar?</strong><span>Llévalo a tu liderazgo, grupo, servicio, familia o vida personal.</span></li><li><strong>¿Cómo se lo explicaría a alguien nuevo?</strong><span>Explícalo de manera sencilla, como si estuvieras hablando directamente con una ahijada o ahijado.</span></li></ol><p>Graba en un lugar tranquilo, identifica cada módulo y habla con naturalidad. Prioriza una explicación clara, personal y auténtica; no hay una duración rígida por módulo.</p></section>
+      <section class="final-check" aria-labelledby="check-title"><h3 id="check-title">Antes de entregar</h3><div id="final-checklist" class="check-list"></div><div id="completion-banner" hidden><i data-lucide="circle-check" aria-hidden="true"></i><div><strong>DIPLOMADO COMPLETADO</strong><p>Ya puedes realizar tu entrega.</p></div></div><p>Envía tu cuadernillo y tu audio juntos por el canal indicado por tu coordinación. Conserva una copia de ambos.</p><a id="contact-link" class="button outline" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" aria-hidden="true"></i>Consultar el canal de entrega</a></section>
+    </section>
+    <section class="backup"><details><summary><i data-lucide="save" aria-hidden="true"></i>Respaldo de mis respuestas</summary><p>Tus respuestas se guardan en este navegador y dispositivo. Para continuar en otro teléfono o recuperar tu trabajo, descarga un respaldo e impórtalo allí.</p><div class="export-actions"><button id="backup-download" class="button outline"><i data-lucide="download" aria-hidden="true"></i>Descargar respaldo</button><label class="button outline import-label"><i data-lucide="upload" aria-hidden="true"></i>Importar respaldo<input id="backup-import" type="file" accept=".json,application/json"></label></div><p id="backup-status" role="status"></p></details></section>
+  </main>
+  <footer class="shell"><span>Fraternidad Guerreros de la Luz</span><span>Diplomado en Liderazgo Efectivo I · 2022</span></footer>
+  <dialog id="import-dialog"><h2>Importar mis respuestas</h2><p id="import-description"></p><p>El respaldo reemplazará las respuestas actuales de esta generación. Descarga primero una copia si necesitas conservarlas.</p><div class="export-actions"><button class="button outline" id="cancel-import">Cancelar</button><button class="button gold" id="confirm-import">Importar respaldo</button></div></dialog>
+  <noscript><p class="shell">Activa JavaScript en tu navegador para ver los módulos, guardar tus respuestas y descargar el cuadernillo.</p></noscript>
+</body>
+</html>
