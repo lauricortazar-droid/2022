@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ética e Integridad · FGDLL</title>
+  <meta name="description" content="Portal de Ética e Integridad FGDLL: espacio de orientación, reporte seguro y seguimiento responsable." />
+  <meta name="theme-color" content="#042f66" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="ethics-page">
+  <div class="emergency-banner">🚨 Si existe riesgo inmediato para tu vida o integridad física, llama al <a href="tel:911">911</a>. Este portal no sustituye servicios de emergencia.</div>
+  <nav class="ethics-nav" aria-label="Navegación de Ética e Integridad">
+    <div class="container">
+      <a href="index.html" class="brand" style="color:#fff"><span class="brand-mark" aria-hidden="true"></span><span><span class="brand-name" style="color:#fff">FGDLL · Ética e Integridad</span><span class="brand-sub" style="color:rgba(255,255,255,.74)">Puerto seguro institucional</span></span></a>
+      <div class="ethics-links" role="tablist">
+        <button class="active" data-ethics="inicio">Inicio</button>
+        <button data-ethics="derechos">Derechos</button>
+        <button data-ethics="criterios">Criterios</button>
+        <button data-ethics="reporte">Reporte</button>
+        <button data-ethics="seguimiento">Seguimiento</button>
+        <button data-ethics="apoyo">Apoyo</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="ethics-section active" id="etica-inicio">
+      <div class="ethics-hero"><div class="container"><span class="kicker" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.24)">Puerto seguro · FGDLL</span><h1>Portal de Ética e Integridad</h1><p>Un espacio diseñado para escuchar, ordenar y canalizar reportes con respeto. La dignidad de cada guerrero y guerrera es prioridad.</p><div class="hero-actions"><button class="btn btn-primary" data-ethics="reporte">Hacer un reporte</button><button class="btn btn-light" data-ethics="seguimiento">Consultar seguimiento</button></div></div></div>
+      <div class="container section-tight"><div class="ethics-grid"><article class="card"><div class="card-icon">🛡️</div><h3 class="card-title">Protección</h3><p class="card-text">El reporte se recibe con seriedad y cuidado humano.</p></article><article class="card"><div class="card-icon">🤝</div><h3 class="card-title">Acompañamiento</h3><p class="card-text">Se busca orientar sin juicio y canalizar de forma responsable.</p></article><article class="card"><div class="card-icon">📌</div><h3 class="card-title">Orden</h3><p class="card-text">Cada caso requiere datos claros, seguimiento y confidencialidad.</p></article></div></div>
+    </section>
+
+    <section class="ethics-section" id="etica-derechos"><div class="container"><div class="section-header"><span class="section-label">Filosofía</span><h2 class="section-title">Derechos y dignidad</h2><p class="section-desc">El servicio no justifica el maltrato. La disciplina verdadera sostiene, no humilla.</p></div><div class="cards-grid"><article class="card"><h3 class="card-title">Ser escuchado</h3><p class="card-text">Toda persona puede pedir orientación sin recibir burla, amenaza o exposición pública.</p></article><article class="card"><h3 class="card-title">Ser tratado con respeto</h3><p class="card-text">La corrección debe cuidar la dignidad de la persona y el bienestar común.</p></article><article class="card"><h3 class="card-title">Pedir ayuda</h3><p class="card-text">Cuando algo rebasa el servicio, se debe canalizar con responsabilidad.</p></article></div></div></section>
+
+    <section class="ethics-section" id="etica-criterios"><div class="container"><div class="section-header"><span class="section-label">Criterios</span><h2 class="section-title">Qué se puede reportar</h2><p class="section-desc">Este canal ayuda a ordenar situaciones que dañan la seguridad, la confianza o la integridad del servicio.</p></div><div class="tool-grid"><article class="tool-card"><h3>Maltrato o abuso de autoridad</h3><p>Gritos, humillaciones, amenazas o uso del servicio para controlar.</p></article><article class="tool-card"><h3>Riesgos de seguridad</h3><p>Situaciones que comprometen la integridad física o emocional.</p></article><article class="tool-card"><h3>Confidencialidad</h3><p>Exposición indebida de procesos, testimonios o información sensible.</p></article><article class="tool-card"><h3>Conducta inapropiada</h3><p>Acciones que dañan la confianza del grupo o la comunidad.</p></article><article class="tool-card"><h3>Uso indebido de recursos</h3><p>Manejo poco claro de materiales, espacios o apoyos.</p></article><article class="tool-card"><h3>Orientación preventiva</h3><p>Dudas antes de que una situación crezca o se desordene.</p></article></div></div></section>
+
+    <section class="ethics-section" id="etica-reporte"><div class="container"><div class="section-header"><span class="section-label">Reporte seguro</span><h2 class="section-title">Cuéntalo con claridad</h2><p class="section-desc">Este formulario genera un folio local de seguimiento. Para producción, debe conectarse a un backend seguro o formulario institucional autorizado.</p></div><div class="panel"><form id="reportForm" class="form-grid"><div class="form-group"><label for="tipoReporte">Tipo de situación</label><select id="tipoReporte" class="form-field" required><option value="">Selecciona una opción</option><option>Maltrato o abuso de autoridad</option><option>Riesgo de seguridad</option><option>Confidencialidad</option><option>Conducta inapropiada</option><option>Orientación preventiva</option></select></div><div class="form-group"><label for="zonaReporte">Zona o grupo relacionado</label><input id="zonaReporte" class="form-field" placeholder="Ej. Zona Jaguar / Grupo..." /></div><div class="form-group"><label for="contactoReporte">Contacto opcional</label><input id="contactoReporte" class="form-field" placeholder="Nombre, teléfono o correo si deseas respuesta" /></div><div class="form-group"><label for="fechaReporte">Fecha aproximada</label><input id="fechaReporte" class="form-field" type="date" /></div><div class="form-group full"><label for="detalleReporte">Relata los hechos con orden</label><textarea id="detalleReporte" class="form-field" required placeholder="Qué pasó, dónde, quiénes estaban presentes y qué necesitas que se revise..."></textarea></div><div class="form-group full"><button class="btn btn-primary" type="submit">Generar reporte</button></div></form><div class="code-box" id="reportCodeBox"><strong>Folio generado:</strong><div class="code-display" id="reportCode">—</div><p>Guarda este folio. En esta versión estática no se envía información a un servidor.</p></div></div></div></section>
+
+    <section class="ethics-section" id="etica-seguimiento"><div class="container"><div class="section-header"><span class="section-label">Seguimiento</span><h2 class="section-title">Consulta tu folio</h2><p class="section-desc">En producción, esta sección debe consultar el estado del caso desde una base segura.</p></div><div class="panel"><div class="form-grid"><div class="form-group"><label for="folioInput">Folio</label><input id="folioInput" class="form-field" placeholder="Ej. FGDLL-2026-AB12" /></div><div class="form-group" style="align-self:end"><button class="btn btn-blue" type="button" id="checkFolio">Consultar</button></div></div><div class="timeline" id="folioTimeline" style="margin-top:20px"><div class="timeline-item active"><div class="timeline-dot">1</div><div><strong>Reporte recibido</strong><p>El folio se registra para revisión inicial.</p></div></div><div class="timeline-item"><div class="timeline-dot">2</div><div><strong>Revisión responsable</strong><p>Se valida información, riesgo y canal adecuado.</p></div></div><div class="timeline-item"><div class="timeline-dot">3</div><div><strong>Canalización</strong><p>Se define acompañamiento, orientación o seguimiento formal.</p></div></div></div></div></div></section>
+
+    <section class="ethics-section" id="etica-apoyo"><div class="container"><div class="section-header"><span class="section-label">Acompañamiento</span><h2 class="section-title">No estás solo</h2><p class="section-desc">Pedir ayuda también es un acto de valor. Cuando exista riesgo inmediato, llama al 911.</p></div><div class="quote-card"><h2>La luz también se cuida con límites.</h2><p>El objetivo no es castigar desde el juicio, sino proteger desde la responsabilidad. Donde hay verdad, respeto y orden, el servicio vuelve a su centro.</p><div class="hero-actions" style="margin-top:22px"><a href="portal.html" class="btn btn-primary">Volver al Portal</a><a href="index.html" class="btn btn-light">Inicio público</a></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div><div class="footer-title">Fraternidad Guerreros de la Luz</div><div class="footer-sub">Ética · Integridad · Acompañamiento</div></div><div class="footer-small">Portal de orientación. No sustituye atención médica, legal o de emergencia.<br />© <span id="year"></span> FGDLL</div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
